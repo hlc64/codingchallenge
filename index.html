@@ -1,43 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Recipes</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Stylesheet Link -->
+  <link href="./styles.css" rel='stylesheet'>
+
+
+  <title>Recipe World by HLC</title>
 </head>
 
 <body>
 
- 
-  <div class="grid-container">
-    <div class="grid-header">
-      <nav>
-        INSERT LOGO THING HERE 
-      </nav>
-      <br>
-    </div>
-    <div class="grid-content">
-      <div class="grid-item-1">
-        <h3>The Best Tacos</h3>
-        <img src="./images/krisztian-tabori-ZQf4jzkpz1k-unsplash.jpg"/>
-        <p>Ingredients here</p>
-        <p>Cooking Instructions</p>
+
+  <div class="container">
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+      <!-- Navbar content -->
+    </nav>
+  </div>
+  <!--Page Layout Starts Here-->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card-group">
+          <div class="card">
+            <img src="./images/likemeat-CbNAuxSZTFo-unsplash.jpg"card-img-top" alt="pizza with basil tomato and olives">
+            <div class="card-body">
+              <h5 class="card-title">Pizza</h5>
+              <p class="card-text">Ingredients:
+              <ul>
+                <li>
+                 Tomatoes
+                </li>
+                <li>
+                 Olives
+                </li>
+                <li>
+                 Fresh Basil
+                </li>
+                <li>
+                 Salami
+                </li>
+              </ul>
+              Cooking Instructions:
+              <ol>
+                <li>
+                  Begin by pre heating the oven to 220 degrees.
+                </li>
+                <li>
+                  Mix flour, yeast and water together. Roll out the dough. 
+                </li>
+                <li>
+                 Cover the base with your sauce and add toppings. 
+                </li>
+              </ol>
+              </p>
+
+              <!--I would want to insert a function here to determine when the recipie was last updated-->
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" class="card-img-top" alt="Poke Bowl">
+            <div class="card-body">
+              <h5 class="card-title">Poke Bowl</h5>
+              <p class="card-text">
+                Ingredients:
+                <ul>
+                  <li>Eggs</li>
+                  <li>Tofu</li>
+                  <li>Cabbage</li>
+                  <li>Edamame</li>
+                </ul>
+
+                Cooking Instructions:
+                <ol>
+                  <li>
+                   Cut the tofu into bite size pieces.
+                  </li>
+                  <li>
+                   Boil some water in a pan, cook eggs for 6 minutes. 
+                  </li>
+                  <li>
+                    Cut vegetales up into strips.
+                  </li>
+                </ol>
+              </p>
+
+              <!--I would want to insert a function here to determine when the recipie was last updated-->
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <br>
-      <div class="grid-item">2</div>
-      <br>
-      <div class="grid-item">3</div>
     </div>
-    <div class="grid-footer"></div>
+  </div>
+  </div>
+  <!--Page Layout Ends Here-->
 
 
+  <!--Form starts here-->
+  <div class="container recipeForm">
+    <form class="row g-3">
+      <div class="col-md-12">
+        <label for="inputRecipeName" class="form-label">Recipe Name</label>
+        <input type="text" class="form-control" id="inputRecipeName">
+      </div>
+      <div class="col-12">
+        <label for="inputIngredients" class="form-label">Ingredients</label>
+        <input type="text" class="form-control" id="inputIngredients" placeholder="List ingredients here">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button class="btn btn-secondary btn-sm " type="button">Add</button>
+        </div>
+      </div>
+      <div class="col-12">
+        <label for="inputInstructions" class="form-label">Cooking Instructions</label>
+        <input type="text" class="form-control" id="inputInstructions" placeholder="List instructions here">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button class="btn btn-secondary btn-sm " type="button">Add</button>
+        </div>
 
+        <div class="col-md-6">
+          <label for="inputCuisine" class="form-label">Cuisine</label>
+          <select id="inputCuisine" class="form-select">
+            <option selected>Choose...</option>
+            <option>Vietnamese</option>
+            <option>Caribbean</option>
+            <option>Korean</option>
+            <option>Indian</option>
+            <option>Italian</option>
+            <option>American</option>
+            <option>Thai</option>
+            <option>Spanish</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <!--This would be to write other cuisine if not listed above-->
+        <!-- <div class="col-md-6">
+        <label for="inputOther" class="form-label">Other</label>
+        <input type="text" class="form-control" id="inputOther" placeholder="">
+      </div> -->
+        <div class="col-12">
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button type="submit" class="btn btn-secondary ">Add Recipe</button>
+          </div>
+        </div>
+    </form>
   </div>
 
+  <!--Form ends here-->
+
+
+
+  <footer>HLCRecipeWorld Copyright © RecipeWorld.com All rights reserved</footer>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
 
 </body>

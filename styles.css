@@ -1,41 +1,12 @@
-nav {
-  background-color: #dbd6e9;
-  height: 80px;
+.navbar {
+  height: 150px;
+  width: auto;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto;
-  border: black 1px solid;
+.recipeForm {
+  border: 1px solid rgb(204, 201, 201)
+  
 }
-
-.grid-header {
-  grid-template-columns: auto;
-}
-
-.grid-content {
-  border: black 1px solid;
-}
-
-.grid-item-1 {
-  border: black 1px solid;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-
-}
-
-.grid-item {
-  border: black 1px solid;
-}
-
-.col {
-  flex: 1;
-}
-
-img {
-  height: 600px;
-  width: 600px;
+footer {
+  font-size: 10px;
 }
