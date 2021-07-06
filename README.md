@@ -2,7 +2,7 @@
 
 Create a simple recipe app. The app can be a command-line app or a web app. You may useJavaScript libraries but they are not a requirement, HTML/CSS and vanilla JS are sufficient.
 
-
+Here is the link to my page: https://hlc64.github.io/codingchallenge/
 
 Requirements:
 
